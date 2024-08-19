@@ -29,7 +29,7 @@ body {
 }
 
 #background {
-  background-image: url(background-img.jpg);
+  background-image: url(./images/background-img.jpg);
   background-size: cover;
   background-attachment: scroll;
   background-repeat: no-repeat;
