@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "norsebold";
+  src: url("./fonts/norse-bold-webfont.woff2") format("woff2"),
+    url("./fonts/norse-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  color: black;
+  display: flex;
+  font-family: sans-serif;
+}
+
+#background {
+  background-size: cover;
+  background-image: url(photo-1585202900225-6d3ac20a6962.avif);
+  background-repeat: no-repeat;
+  width: 45vw;
+  height: 100vh;
+}
+
+.logo {
+  width: 45vw;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  position: relative;
+  top: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icon {
+  width: auto;
+  height: 70%;
+}
+
+.logo-text {
+  color: white;
+  font-family: "norsebold", sans-serif;
+  font-size: 82px;
+  margin-left: 12px;
+}
+
+.section-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.container-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 36px;
+}
+
+.heading,
+.subtext {
+  font-size: 20px;
+  font-weight: 700;
+  width: 85%;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  /* padding: 36px; */
+}
+
+.container-inputs {
+  width: 55vw;
+  background-color: white;
+  border-bottom: 4px solid rgb(217, 217, 217);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-row {
+  display: flex;
+  gap: 50px;
+  /* margin: 8px; */
+  margin: 8px 0 8px 0;
+}
+
+.form-row > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.lets-do-this {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+label {
+  color: rgb(63, 63, 63);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.form-button {
+  padding-top: 20px;
+  padding-left: 36px;
+}
+
+.create-account {
+  background-color: #596d48;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: 0;
+  border-radius: 8px;
+  width: 160px;
+  height: 35px;
+}
+
+.login {
+  padding-top: 16px;
+  padding-left: 36px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-link {
+  color: #596d48;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  width: 200px;
+  height: 24px;
+}
+
+.form-row > input:active {
+  border: 1px solid blue;
+
+}
