@@ -14,21 +14,38 @@ body {
   font-family: sans-serif;
 }
 
+.photo-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption {
+  color: white;
+}
+
+.caption-link {
+  color: inherit;
+}
+
 #background {
+  background-image: url(background-img.jpg);
   background-size: cover;
-  background-image: url(photo-1585202900225-6d3ac20a6962.avif);
+  background-attachment: scroll;
   background-repeat: no-repeat;
   width: 45vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .logo {
   width: 45vw;
   height: 150px;
   background-color: rgba(0, 0, 0, 0.6);
-
   position: relative;
-  top: 180px;
+  bottom: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,20 +154,26 @@ label {
 
 .login-link {
   color: #596d48;
-}
-
-a {
   text-decoration: none;
 }
 
 input {
+  outline: none;
   border: 1px solid #e5e7eb;
   border-radius: 4px;
+  padding: 0 4px 0 4px;
   width: 200px;
   height: 24px;
 }
 
-.form-row > input:active {
-  border: 1px solid blue;
+input:focus:invalid {
+  outline: none;
+  border: 1px solid red;
+  box-shadow: 2px 1px 1px rgba(255, 0, 0, 0.5);
+}
 
+input:focus:valid {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 2px 1px 1px rgba(0, 0, 255, 0.5);
 }
